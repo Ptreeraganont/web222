@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800&display=swap");
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  @apply font-bold m-0 text-black;
+}
+
+h1 {
+  font-size: 45px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 25px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+p {
+  @apply text-gray-600;
+}
+.container {
+  @apply mx-auto px-5;
+}
+.sticky {
+  @apply fixed bg-white shadow;
+}
+.collapse.show {
+  @apply block;
+}
+.page-scroll {
+  @apply block px-5 py-2 uppercase duration-300;
+}
+.page-scroll.active,
+.page-scroll:hover {
+  @apply text-blue-600;
+}
+.section-heading {
+  @apply text-4xl text-gray-700 font-bold tracking-wide;
+}
+
+#hero-area {
+  @apply text-white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/hero-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hero-area p,
+#hero-area h2 {
+  @apply text-gray-200;
+}
+
+/* ========== about ========== */
+
+.section_title .sub_title {
+  @apply md:text-xl font-semibold;
+}
+.section_title .main_title {
+  @apply text-2xl md:text-4xl font-bold mt-4;
+}
+.section_title p {
+  @apply mt-5;
+}
+
+.education {
+  @apply border-2 border-gray-200 rounded-3xl py-5 px-3 sm:py-6 sm:px-4 md:py-8 md:px-16 transition-all duration-100;
+  @apply hover:shadow-lg;
+}
+
+.main-btn {
+  @apply inline-block font-medium text-base text-center rounded-md text-white cursor-pointer z-10 transition-all duration-300 bg-gray-800 overflow-hidden relative px-10 py-4 hover:bg-opacity-80 hover:text-white;
+}
+
+.contact-btn {
+  @apply text-white py-4 px-10 rounded-md hover:bg-opacity-80 bg-blue-900;
+}
