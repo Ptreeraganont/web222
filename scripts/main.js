@@ -25,26 +25,6 @@
         elem.classList.add("text-white");
       }
     });
-
-    var contactmebutton = document.getElementById("goto_contact");
-    contactmebutton.addEventListener("click", (e) => {
-      e.preventDefault();
-      document.getElementById("contact").scrollIntoView({
-        behavior: "smooth",
-        offsetTop: 1 - 60,
-      });
-    });
-
-    var contactmebutton = document.getElementById("goto_resume");
-    contactmebutton.addEventListener("click", (e) => {
-      e.preventDefault();
-      window
-        .open(
-          "https://drive.google.com/file/d/14O6GinDFOcF0oMEvJda4zvqxKIIuzYT3/view?ts=62f72e55",
-          "_blank"
-        )
-        .focus();
-    });
   };
 
   // Get the navbar
@@ -75,6 +55,26 @@
         hourlyRate.classList.add("hidden");
       }
     });
+  });
+
+  var contactmebutton = document.getElementById("goto_contact");
+  contactmebutton.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById("contact").scrollIntoView({
+      behavior: "smooth",
+      offsetTop: 1 - 60,
+    });
+  });
+
+  var resumebutton = document.getElementById("goto_resume");
+  resumebutton.addEventListener("click", (e) => {
+    e.preventDefault();
+    window
+      .open(
+        "https://drive.google.com/file/d/14O6GinDFOcF0oMEvJda4zvqxKIIuzYT3/view?ts=62f72e55",
+        "_blank"
+      )
+      .focus();
   });
 })();
 
