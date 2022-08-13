@@ -71,7 +71,7 @@
     e.preventDefault();
     window
       .open(
-        "https://drive.google.com/file/d/14O6GinDFOcF0oMEvJda4zvqxKIIuzYT3/view?ts=62f72e55",
+        "https://drive.google.com/file/d/1_ABQPtSsQdz6lCeeba6ykzuoiO1ZUFEI/view?ts=62f7312a",
         "_blank"
       )
       .focus();
