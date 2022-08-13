@@ -38,7 +38,12 @@
     var contactmebutton = document.getElementById("goto_resume");
     contactmebutton.addEventListener("click", (e) => {
       e.preventDefault();
-      window.open(url, "_blank").focus();
+      window
+        .open(
+          "https://drive.google.com/file/d/1w2OT1gcBBcWwkQG5mqgrMGw_qSD3bq0u/view?ts=62f7235d",
+          "_blank"
+        )
+        .focus();
     });
   };
 
