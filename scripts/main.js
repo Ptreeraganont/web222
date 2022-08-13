@@ -40,7 +40,7 @@
       e.preventDefault();
       window
         .open(
-          "https://drive.google.com/file/d/1w2OT1gcBBcWwkQG5mqgrMGw_qSD3bq0u/view?ts=62f7235d",
+          "https://drive.google.com/file/d/14O6GinDFOcF0oMEvJda4zvqxKIIuzYT3/view?ts=62f72e55",
           "_blank"
         )
         .focus();
